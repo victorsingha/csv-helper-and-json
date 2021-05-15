@@ -10,7 +10,8 @@ namespace CSVHelperAndJSON
     {
         static void Main(string[] args)
         {
-            CSVHandler.ImplementCSVDataHandling();
+            //CSVHandler.ImplementCSVDataHandling();
+            ReadCSV_And_WriteJSON.ImplementCSVToJSON();
             Console.ReadKey();
         }
     }
