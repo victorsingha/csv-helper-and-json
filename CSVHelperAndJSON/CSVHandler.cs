@@ -32,15 +32,14 @@ namespace CSVHelperAndJSON
                     Console.Write("\t" + addressData.code);
                 }
 
-                    Console.WriteLine("**************Reading from csv file and write to csv file");
-
-                    //writing csv file               
-                    using (var writer = new StreamWriter(exportFilePath))
-                    using (var csvExport = new CsvWriter(writer, CultureInfo.InvariantCulture))
-                    {
-                        csvExport.WriteRecords(records);
-                    }
+                Console.WriteLine("**************Reading from csv file and write to csv file");
                 
+                //writing csv file               
+                using (var writer = new StreamWriter(exportFilePath))
+                using (var csvExport = new CsvWriter(writer, CultureInfo.InvariantCulture))
+                {
+                    csvExport.WriteRecords(records);
+                }                
             }
         }
     }
