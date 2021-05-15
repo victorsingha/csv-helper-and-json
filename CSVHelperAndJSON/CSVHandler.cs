@@ -30,6 +30,7 @@ namespace CSVHelperAndJSON
                     Console.Write("\t" + addressData.city);
                     Console.Write("\t" + addressData.state);
                     Console.Write("\t" + addressData.code);
+                }
 
                     Console.WriteLine("**************Reading from csv file and write to csv file");
 
@@ -39,7 +40,7 @@ namespace CSVHelperAndJSON
                     {
                         csvExport.WriteRecords(records);
                     }
-                }
+                
             }
         }
     }
